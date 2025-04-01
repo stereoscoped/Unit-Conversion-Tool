@@ -55,7 +55,7 @@ def button_clicked():
     rounding = len(str(val))
     for u in range(len(units)): # outputs a list of converted measurements
         OutOut = str(round(cVal[u], rounding - int(math.floor(math.log10(abs(cVal[u]))))))
-    output.insert(tkinter.END, OutOut)
+    output.insert(tkinter.END, cVal)
 
 button = tkinter.Button(root, text="Convert", command=button_clicked)
 button.pack()
